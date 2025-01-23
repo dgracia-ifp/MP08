@@ -1,0 +1,104 @@
+:root {
+    --colorT: black;
+    --color0: cyan;
+    --color1: red;
+    --color2: yellow;
+    --color3: orange;
+    --colorB: limegreen;
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../fonts/Minecraft/Minecraft.eot');
+    src: url('../fonts/Minecraft/Minecraft.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Minecraft/Minecraft.woff2') format('woff2'),
+        url('../fonts/Minecraft/Minecraft.woff') format('woff'),
+        url('../fonts/Minecraft/Minecraft.ttf') format('truetype'),
+        url('../fonts/Minecraft/Minecraft.svg#Minecraft') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+        
+        
+        h1{
+            padding-top: 20px;
+            text-align: center;
+            font-family: 'Minecraft';
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        p{
+            padding: 1rem;
+            background: var(--color0);
+            cursor:cell;
+            color: var(--colorT);
+            overflow: hidden;
+            width: 50vw;
+            height: 50vw;
+
+        }
+        .progress{
+            height: 10px;
+            width: 100%;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--colorB);
+            scale: 0 1;
+            animation: analitzador linear;
+                    -o-animation-timeline: scroll() ;
+                -moz-animation-timeline: scroll() ;
+            -webkit-animation-timeline: scroll() ;
+                    animation-timeline: scroll();
+            transform-origin: left;
+        }
+
+        @keyframes analitzador {
+            to {
+                scale: 1 1;
+            }
+        }
+
+@media screen and (max-width: 480px) {
+
+    /* aqui va el disseny per smartphone */
+    body{
+        background: var(--color1);
+    }
+
+    h1{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1279px)  {
+
+    /* aqui va el disseny per tablet */
+    body{
+        background: var(--color2);
+    }
+        
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1280px)  {
+
+    /* aqui va el disseny per ordinador */
+    body{
+        background: var(--color3);
+    }
+        
+    h1{
+        font-size: 4rem;
+    }
+
+    p{
+        columns: 2;
+    }
+}

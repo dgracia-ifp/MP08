@@ -1,0 +1,542 @@
+  /* ORDEN:
+  ·Cabeza/cara
+  ·Cejas
+  ·Ojos
+  ·Piezas cara
+  ·Pelo
+  ·Orejas
+  ·Nariz
+  ·Boca
+  ·
+  
+  
+  
+  
+  /*---------------CABEZA/CARA---------------*/
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+  }
+  
+  .cap{
+    height: 900px;
+    width: 650px;
+    background: ;
+    margin: 0 auto;
+    overflow: visible;
+    top: 200px;
+    
+    
+  }
+  .cara{
+    width: 552px;
+    height: 380px;
+    background: rgb(252, 208, 180);
+    margin: 0 auto;
+    border-radius: 200px 200px 0 0 / 200px 200px 0 0;
+    
+    
+  }
+  /*---------------CEJAS---------------*/
+  .front{
+    height:80px;
+    background: ;
+    text-align: center;
+    overflow: visible;
+}
+
+    .celles{
+        width: 200px;
+        background-color: rgb(41, 21, 5);
+        background-image: repeating-linear-gradient(to right, rgb(41, 41, 5) 0%, transparent 1%, black 2%);
+        margin: 0px 30px;
+        top: 30px;
+
+    }
+    .celles.c1{
+        height: 150px;
+        clip-path: polygon(8% 23%, 55% 19%, 95% 36%, 46% 35%, 8% 43%);
+        transform: scaleX(-1) scale(120%);
+        display: inline-block;
+
+    }
+    .celles.c2{
+        display: inline-block;
+        height: 150px;
+        clip-path: polygon(8% 23%, 55% 19%, 95% 36%, 46% 35%, 8% 43%);
+        transform: scale(120%);
+    }
+    /*---------------OJOS---------------*/
+    .mirada{
+        height: 70px;
+        background: ;
+        text-align: center;
+    }
+    
+        .mirada .ull {
+            height: 40px;
+            width: 130px;
+            background: white;
+            border-radius: 0px 100px 0px 100px;
+            display: inline-block;  
+            margin: 15px 45px;
+            order-top: solid 3px black;
+            box-shadow: 0 -10px 40px black;
+    
+        }
+
+        .mirada .ull:before {
+          content:"";
+          display: block;
+          background: transparent;
+          width: 130px;
+          height: 40px;
+          position: absolute;
+          border-radius: 0px 100px 0px 100px;
+          border-top: solid 3px transparent;
+          top:0;
+          left:0;
+          box-shadow: inset 10px -5px 0px rgb(252, 208, 180);
+          z-index: 500000001;
+        }
+
+        .mirada .ull:after {
+          content:"";
+          display: block;
+          background: transparent;
+          width: 130px;
+          height: 40px;
+          position: absolute;
+          border-radius: 0px 100px 0px 100px;
+          border-top: solid 3px transparent;
+          top:-5px;
+          left:0;
+          box-shadow: inset 10px 5px 0px black;
+          z-index: 500000000;
+        }
+
+
+        .mirada .ull.dret{
+            border-radius: 100px  0px 100px 0px;
+        }
+
+        .mirada .ull.dret:before {
+          border-radius: 100px  0px 100px 0px;
+          box-shadow: inset -10px -5px 0px rgb(252, 208, 180);
+          z-index: 500000001;
+        }
+
+        .mirada .ull.dret:after {
+          border-radius: 100px  0px 100px 0px;
+          box-shadow: inset -10px 5px 0px black;
+          z-index: 500000000;
+
+        }
+    
+            .mirada .ull .pupila{
+                height: 40px;
+                width: 40px;
+                background: radial-gradient(rgb(103, 51, 9), rgb(28, 19, 9));
+                border-radius: 50%;
+                margin: 0 auto;
+            }
+
+
+                .mirada .ull .pupila .iris{
+                    height: 20px;
+                    width: 20px;
+                    background: black;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    top: 10px;
+                }
+    /*---------------PIEZAS CARA---------------*/
+
+.p1{
+  width: 375px;
+  height: 220px;
+  background: 	rgb(252, 208, 180);
+  transform: skew(5deg);
+  position: absolute;
+  top:380px;
+  left:0;
+  margin-left: 58.5px;
+}
+
+.p2{
+  width: 375px;
+  height: 220px;
+  background:rgb(252, 208, 180);
+  transform: skew(-5deg);
+    position: absolute;
+  top:380px;
+  right:0;
+  margin-right:58.5px;
+  
+}
+
+.p3{
+  width: 200px;
+  height: 160px;
+  background: rgb(252, 208, 180);
+  transform: skew(44deg);
+  position: absolute;
+  top:600px;
+  left:0;
+  margin-left: 145px;
+}
+
+.p4{
+  width: 200px;
+  height: 160px;
+  background: rgb(252, 208, 180);
+  transform: skew(-44deg);
+  position: absolute;
+  top:600px;
+  right:0;
+  margin-right: 145px;
+  
+}
+
+.p5 {
+  width: 230px;
+  height: 204px;
+  background: rgb(252, 208, 180);
+  position: absolute;
+  top:580px;
+  left:210px;
+  border-radius: 0 0 130px 130px / 0 0 50px 50px;
+}
+  
+  /*---------------PELO---------------*/
+  
+  .cabell {
+    height: 210px;
+    background:  rgb(41, 21, 5);
+    border-radius: 200px 200px 0px 0px / 150px 150px 0 0;
+    background-imag: repeating-linear-gradient(to right,black 0%, transparent 1%, black 2%);
+    top: -50px;
+
+    width: 550px;
+
+  }
+
+  .cabell:after { /* la bola */
+    content: "";
+    display: block;
+    width: 650px;
+    height: 290px;
+    background:repeating-linear-gradient(90deg, #444 0%, black 2%);
+
+    background: rgb(41, 21, 5);
+    position: absolute;
+    top: -10px;
+    left: -50px;
+    z-index: 70000;
+    border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+  }
+
+  
+    .pelo1, .pelo2, .pelo3, .pelo4, .pelo5, .pelo6{
+      width: 250px;
+      height: 130px;
+      background-color:   rgb(41, 21, 5);
+      z-index: 80000;
+      top: 90px;
+      border-radius: 30px 50% 50% 150px;
+      float: right;
+      left: 300px;
+      margin: 0 auto;
+      position: absolute;
+    }
+
+/* IMPARES/IZQUIERDA */
+    .pelo1 {
+      transform: rotate(350deg);
+      top: 170px;
+      left: 60px;
+      border-bottom: 5px solid #444;
+    }
+    .pelo3 {
+      transform: rotate(-11deg);
+      top: 160px;
+      left: 20px;
+      border-bottom: 5px solid #444;
+    }
+    .pelo5 {
+      transform: rotate(-11deg);
+      top: 140px;
+      left: -40px;
+      border-bottom: 5px solid #444;
+    }
+
+
+    /* PARES/DERECHA */
+    .pelo2{
+      transform: rotate(10deg);
+      top: 170px;
+      left: 280px;
+      border-bottom: 5px solid #444;
+    }
+    .pelo4{
+      transform: rotate(0deg);
+      top: 150px;
+      left: 300px;
+      border-bottom: 5px solid #444;
+    }
+    .pelo6{
+      transform: rotate(350deg);
+      top: 110px;
+      left: 320px;
+      border-bottom: 5px solid #444;
+    }
+
+   /* .pelo1:before, .pelo2:before {
+      content:"";
+      display: block;
+      width: 250px;
+      height: 130px;
+      background-color:   rgb(41, 21, 5);
+      z-index: 80000;
+      border-radius: 30px 50% 50% 150px;
+      float: right;
+      margin: 0 auto;
+      position: absolute;
+      top: -50px;
+      border-bottom: 5px solid #444;
+    }
+
+    .pelo1:after, .pelo2:after {
+      content:"";
+      display: block;
+      width: 250px;
+      height: 130px;
+      background-color:   rgb(41, 21, 5);
+      z-index: 80000;
+      border-radius: 30px 50% 50% 150px;
+      float: right;
+      margin: 0 auto;
+      position: absolute;
+      top: -75px;
+      border-bottom: 5px solid #444;
+    }
+      */
+
+    pelo{
+    height: 130px;
+    width: 98px;
+    background: transparent;
+    box-shadow: 7px -4px 0px rgb(41, 21, 5);
+    border-radius: 50%;
+    margin: -62px 487px;
+    transform: rotate(200deg);
+    top: 140px;
+    left: -200px;
+
+    }
+
+    .peloatras1{
+      height: 260px;
+      width: 15px;
+      background-color:  rgb(41, 21, 5);
+      border-radius: ;
+      left: px;
+      top: 150px;
+      float: left;
+      position: absolute;
+
+    }
+
+      .peloatras1:after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50px;
+        left: 15px;
+        z-index: 60000;
+        background-image: radial-gradient(circle at 100px 100px, rgb(252, 208, 180) 70%, rgb(41, 21, 5) 70%);
+
+      }
+
+
+
+
+    .peloatras2{
+      height: 260px;
+      width: 15px;
+      background-color:  rgb(41, 21, 5);
+      border-radius: ;
+      left: 537px;
+      top: 150px;
+      position: absolute;
+    }
+      .peloatras2:after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 60px;
+        left: -100px;
+         z-index: 60000;
+        background-image: radial-gradient(circle at 100px 100px, rgb(252, 208, 180) 70%, rgb(41, 21, 5) 70%);
+        rotate: 90deg;
+
+      }
+
+  /*---------------OREJAS---------------*/
+.orelles {
+  width: 1200px;
+  height: 250px;
+  background: transparent;
+  z-index: -5;
+  margin: -100px -324px;
+  position: absolute;
+  text-align: center;
+  
+}
+
+.orella{
+  background-color: rgb(249, 201, 171);
+  width: 100px;
+  height: 250px;
+  border-radius: 50%; 
+  float: left;
+  margin: 0 250px;
+  transform: rotate(-10deg);
+}
+.orella + .orella {
+  transform: rotate(10deg);
+}
+
+  /*---------------NARIZ---------------*/
+
+  .nas {
+    width: 75px;
+    height: 190px;
+    background: rgb(214, 164, 124);
+    border-radius: 30% 30% 50% 50% / 100% 100% 10% 10%;
+        box-shadow: 5px solid black;
+    margin: auto;
+        border-bottom: 1px;
+    background-image:linear-gradient(rgb(252, 208, 180)  -0% ,rgb(249, 201, 171)); 
+    z-index: 100;
+    border-bottom: 3px solid;
+}
+
+.hb::before, .ha::after {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.nas::before {
+    width: 50px;
+    height: 45px;
+    content:"";
+    background-color: rgb(249, 201, 171);
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;    
+    border-right: 3px solid;
+    bottom: 10px;
+    right: -22px;
+  }
+  
+  .nas::after {
+    width: 50px;
+    height: 45px;
+    content:"";
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    border-left: 3px solid;
+    border-bottom: 0px solid;
+    bottom: 10px;
+    left: -22px;
+    background-color: rgb(249, 201, 171);
+  }
+
+    /*---------------BOCA---------------*/
+/*
+.boca{
+  background-color: gray;
+  width: 200px;
+  height: 80px;
+  z-index: 100;
+  top: 30px;
+  margin: 0 auto;
+}
+  .llavi1{
+    background-color: pink;
+    width: 200px;
+    height: 35px;
+    float: left;
+    border-radius:  150px 150px 0px 0px ;
+  }
+
+  .llavi2{
+    background-color: salmon;
+    width: 200px;
+    height: 45px;
+    border-radius: 0px 0px 150px 150px;
+    float: left;
+  }
+    */
+
+  .boca{
+    transform:scale(0.8);
+    position: relative;
+    top:40px;
+    z-index: 6000000;
+
+  }
+  
+  .llavi1, .llavi2{
+    width:;
+    height:;
+    background-color: ;
+    border-radius:;
+    position: absolute;
+    top:;
+    transform:;
+
+  }
+  
+  .llavi1{
+    left:;
+    transform:;
+    border-bottom:;
+
+
+  }
+  
+  .llavi2{
+    width:20px;
+    height:20px;
+    background: rgb(252, 208, 180);
+    z-index: 6000000;
+    left: 315px;
+    top: -10px;
+    transform: rotate(45deg);
+    border-bottom:;
+
+
+  }
+  
+  .llavi3{
+    width:250px;
+    height:50px;
+    border-radius:50% 50% 50% 50% / 20% 20% 80% 80%;
+    background-color: #ef918a;
+    position: absolute;
+    top:0px;
+    left:200px;
+    border-top:40px solid #e68a84 ;
+
+  }

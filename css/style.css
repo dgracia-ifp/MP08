@@ -109,3 +109,11 @@ nav li{
         transform: translateX(0px);
     }
 }
+
+@media screen and (max-width: 960px) {
+
+    /* aqui va el disseny per smartphone */
+    .p2 ul{
+        width: 100%;
+    }
+}
